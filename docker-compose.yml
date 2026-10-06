@@ -21,6 +21,7 @@ services:
       - ./db/init:/docker-entrypoint-initdb.d:ro
     restart: always
     environment:
+      TZ: Asia/Tokyo
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
       MYSQL_DATABASE: ${DB_NAME:-app}
       MYSQL_USER: ${DB_USER:-app}
