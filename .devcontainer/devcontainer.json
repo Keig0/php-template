@@ -2,7 +2,8 @@
   "name": "php-template",
   "dockerComposeFile": "../docker-compose.yml",
   "service": "php",
-  "workspaceFolder": "/var/www/html",
+  // "workspaceFolder": "/var/www/html",  //htdocsの中身だけ
+  "workspaceFolder": "/workspace",  //全体
   "customizations": {
     "vscode": {
       "extensions": ["bmewburn.vscode-intelephense-client"]
